@@ -316,7 +316,7 @@ nav {
     font-size: 1rem;
 }
 
-.contact-button:.contact-button:hover {
+.contact-button:contact-button:hover {
     background-color: #E6D8D6;
     color: black;
     border: 2px solid #171817;
