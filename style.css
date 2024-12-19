@@ -9,6 +9,7 @@ body {
     background-color: #2D2726;
     color: #E6D8D6;
     font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
 }
 
 /* Header & Navigation */
@@ -16,13 +17,15 @@ header {
     position: sticky;
     top: 0;
     background-color: #232323;
+    height: 10vh;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0 5%;
+    height: 100%;
     max-width: 1344px;
     margin: 0 auto;
 }
@@ -32,16 +35,13 @@ nav {
     font-size: 1.5rem;
     color: #E6D8D6;
     text-decoration: none;
-    text-align: left;
-    margin-left: 0;
 }
 
 .nav-links {
     font-family: 'Hepta Slab', serif;
     display: flex;
     gap: 2rem;
-    align-items: flex-end;
-    margin-left: 20px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -49,6 +49,7 @@ nav {
     text-decoration: none;
     opacity: 0.7;
     transition: opacity 0.3s;
+    font-size: 1rem;
 }
 
 .nav-links a:hover {
@@ -60,8 +61,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 72px 0;
-    gap: 48px;
+    padding: 5vh 0;
+    gap: 3vh;
     width: 100%;
     max-width: 1344px;
     margin: 0 auto;
@@ -69,8 +70,8 @@ nav {
 
 .hero h1 {
     font-family: 'Hepta Slab', serif;
-    font-size: 120px;
-    line-height: 120px;
+    font-size: 7.5vw;
+    line-height: 1.2;
     font-weight: 500;
     text-align: center;
     letter-spacing: -0.02em;
@@ -80,7 +81,7 @@ nav {
 
 .hero-image {
     width: 100%;
-    height: 672px;
+    height: 60vh;
     border-radius: 12px;
     object-fit: cover;
 }
@@ -88,8 +89,8 @@ nav {
 /* Projects Section */
 .projects-container {
     display: flex;
-    padding: 48px 0;
-    gap: 48px;
+    padding: 5vh 5%;
+    gap: 3vw;
     max-width: 1344px;
     margin: 0 auto;
 }
@@ -100,28 +101,28 @@ nav {
 
 .project-title h2 {
     font-family: 'Hepta Slab', serif;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 1.75rem;
+    line-height: 1.2;
     font-weight: 500;
     letter-spacing: -0.01em;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .project-items {
     display: flex;
-    gap: 48px;
+    gap: 3vw;
     flex: 1;
 }
 
 .project-column {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .project-column p {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.2;
     color: #E6D8D6;
 }
 
@@ -129,45 +130,49 @@ nav {
 .contact-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 48px 0;
-    gap: 24px;
-    max-width: 900px;
+    align-items: flex-start;
+    padding: 5vh 5%;
+    gap: 1.5rem;
+    max-width: 1344px;
     margin: 0 auto;
 }
 
 .contact-container h2 {
     font-family: 'Hepta Slab', serif;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 1.75rem;
+    line-height: 1.2;
     font-weight: 500;
     letter-spacing: -0.01em;
     width: 100%;
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 48px;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+}
+
+.contact-right {
+    display: flex;
+    gap: 3vw;
 }
 
 .contact-column {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 1.75rem;
 }
 
 .contact-column h3 {
-    font-size: 17px;
-    line-height: 28px;
+    font-size: 1.0625rem;
+    line-height: 1.65;
     font-weight: 400;
     color: #E6D8D6;
 }
 
 .contact-column p {
-    font-size: 17px;
-    line-height: 28px;
+    font-size: 1.0625rem;
+    line-height: 1.65;
     color: rgba(230, 216, 214, 0.62);
 }
 
@@ -178,87 +183,87 @@ nav {
 
 /* Testimonials Section */
 .testimonials {
-    padding: 48px 0;
+    padding: 5vh 5%;
     max-width: 1344px;
     margin: 0 auto;
 }
 
 .testimonials h2 {
     font-family: 'Hepta Slab', serif;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 3rem;
+    line-height: 1.08;
     text-align: center;
     letter-spacing: -0.01em;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
 .testimonials-grid {
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
     overflow-x: auto;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
     position: relative;
 }
 
 .testimonial-card {
     background: rgba(255, 255, 255, 0.16);
     border: 1.5px solid #e6d8d633;
-    border-radius: 16px;
-    padding: 24px;
-    min-width: 288px;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    min-width: 18rem;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .testimonial-header {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 0.75rem;
 }
 
 .testimonial-avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 999px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .testimonial-info h3 {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.9375rem;
+    line-height: 1.33;
     font-weight: 600;
 }
 
 .testimonial-info p {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.9375rem;
+    line-height: 1.33;
     color: rgba(230, 216, 214, 0.62);
 }
 
 .testimonial-quote {
     display: flex;
-    gap: 12px;
+    gap: 0.75rem;
     opacity: 0.8;
 }
 
 .quote-line {
     width: 0;
-    height: 72px;
+    height: 4.5rem;
     border-left: 1.5px solid rgba(182, 160, 145, 0.2);
 }
 
 .quote-text {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.2;
 }
 
 /* Gallery Section */
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 48px 24px;
-    padding: 24px 0;
+    gap: 3rem 1.5rem;
+    padding: 1.5rem 5%;
     max-width: 1344px;
     margin: 0 auto;
 }
@@ -271,7 +276,7 @@ nav {
 
 .gallery img:nth-child(3) {
     grid-column: span 2;
-    height: 672px;
+    height: 60vh;
 }
 
 /* Footer */
@@ -280,14 +285,14 @@ nav {
     font-family: 'Hepta Slab', serif;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 96px;
+    padding: 1.5rem 6rem;
     max-width: 1344px;
     margin: 0 auto;
     cursor: pointer;
 }
 
 .copyright {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: rgba(230, 216, 214, 0.62);
     cursor: pointer;
 }
@@ -299,8 +304,8 @@ nav {
 .contact-button {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
     background: none;
     border: 1.5px solid #e6d8d633;
     border-radius: 5px;
@@ -308,28 +313,28 @@ nav {
     cursor: pointer;
     opacity: 0.7;
     transition: opacity 1s;
+    font-size: 1rem;
 }
 
-.contact-button:hover {
+.contact-button:.contact-button:hover {
     background-color: #E6D8D6;
     color: black;
     border: 2px solid #171817;
-    opacity: 3;
-    box-shadow: rgba(182, 160, 145, 0.2);
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(182, 160, 145, 0.2);
 }
 
 /* Media Queries */
 @media (max-width: 1400px) {
     .hero, .projects-container, .contact-container, .testimonials, .gallery {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 60px;
-        line-height: 1.2;
+        font-size: 10vw;
     }
 
     .projects-container {
@@ -341,7 +346,12 @@ nav {
     }
 
     .contact-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-right {
+        flex-direction: column;
     }
 
     .gallery {
@@ -355,7 +365,25 @@ nav {
 
     .footer {
         flex-direction: column;
-        gap: 16px;
-        padding: 24px;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 12vw;
+    }
+
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+
+    .testimonial-card {
+        min-width: 100%;
     }
 }
