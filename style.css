@@ -131,31 +131,27 @@ nav {
 .contact-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 5vh 5%;
+    align-items: center;
+    padding: 3rem 5%;
     gap: 1.5rem;
-    max-width: 1344px;
+    max-width: 56.25rem;
     margin: 0 auto;
 }
 
 .contact-container h2 {
     font-family: 'Hepta Slab', serif;
     font-size: 1.75rem;
-    line-height: 1.2;
+    line-height: 1.14;
     font-weight: 500;
     letter-spacing: -0.01em;
     width: 100%;
 }
 
 .contact-grid {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
     width: 100%;
-}
-
-.contact-right {
-    display: flex;
-    gap: 3vw;
 }
 
 .contact-column {
@@ -163,6 +159,12 @@ nav {
     flex-direction: column;
     gap: 1.75rem;
 }
+
+.contact-right {
+    display: flex;
+    gap: 12vw;
+}
+
 
 .contact-column h3 {
     font-size: 1.0625rem;
@@ -267,6 +269,7 @@ nav {
     padding: 1.5rem 5%;
     max-width: 1344px;
     margin: 0 auto;
+    padding: 20px 0 20px 0;
 }
 
 .gallery img {
@@ -277,7 +280,13 @@ nav {
 
 .gallery img:nth-child(3) {
     grid-column: span 2;
-    height: 60vh;
+    height: 62.22vh;
+    padding-left: 15%;
+    display: flex;
+    justify-self: left;
+    max-width: 100%; 
+   
+    margin: 0; 
 }
 
 /* Footer */
@@ -317,7 +326,7 @@ nav {
     font-size: 1rem;
 }
 
-.contact-button:contact-button:hover {
+.contact-button:hover {
     background-color: #E6D8D6;
     color: black;
     border: 2px solid #171817;
