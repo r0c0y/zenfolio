@@ -444,3 +444,43 @@ nav {
         min-width: 100%;
     }
 }
+
+@media (max-width: 360px) {
+    body {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 14vw;
+    }
+
+    .hero-image {
+        height: 40vh;
+    }
+
+    .project-items {
+        gap: 1rem;
+    }
+
+    .contact-grid {
+        gap: 1rem;
+    }
+
+    .testimonials h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-card {
+        padding: 1rem;
+    }
+
+    .gallery img:nth-child(3) {
+        grid-column: span 1;
+        height: auto;
+    }
+
+    .footer {
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+}
