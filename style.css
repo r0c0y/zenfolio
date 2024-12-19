@@ -380,6 +380,7 @@ nav {
 
 
 /* Media Queries */
+/* General Padding for Smaller Screens */
 @media (max-width: 1400px) {
     .hero, .projects-container, .contact-container, .testimonials, .gallery {
         padding-left: 5%;
@@ -387,6 +388,7 @@ nav {
     }
 }
 
+/* For Tablets and Smaller Screens */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 10vw;
@@ -394,20 +396,23 @@ nav {
 
     .projects-container {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .project-items {
-        display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 
-    .contact-grid {
+    .project-column {
+        align-items: center;
+    }
+
+    .contact-grid, .contact-right {
         flex-direction: column;
         gap: 2rem;
-    }
-
-    .contact-right {
-        flex-direction: column;
     }
 
     .gallery {
@@ -415,8 +420,11 @@ nav {
     }
 
     .gallery img:nth-child(3) {
-        grid-column: auto;
+        grid-column: span 1;
         height: auto;
+        justify-self: center;
+        align-self: center;
+        padding: 0;
     }
 
     .footer {
@@ -426,7 +434,7 @@ nav {
     }
 }
 
-
+/* For Small Phones and Narrow Screens */
 @media (max-width: 480px) {
     .nav-links {
         display: none;
@@ -442,9 +450,21 @@ nav {
 
     .testimonial-card {
         min-width: 100%;
+        padding: 1rem;
+    }
+
+    .gallery img:nth-child(3) {
+        grid-column: span 1;
+        height: auto;
+    }
+
+    .footer {
+        padding: 1rem;
+        gap: 0.5rem;
     }
 }
 
+/* For Ultra-Small Screens (360px and below) */
 @media (max-width: 360px) {
     body {
         font-size: 14px;
@@ -470,13 +490,12 @@ nav {
         font-size: 1.5rem;
     }
 
-    .testimonial-card {
-        padding: 1rem;
-    }
-
     .gallery img:nth-child(3) {
         grid-column: span 1;
         height: auto;
+        justify-self: center;
+        align-self: center;
+        padding: 0;
     }
 
     .footer {
