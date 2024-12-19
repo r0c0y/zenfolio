@@ -112,6 +112,7 @@ nav {
     display: flex;
     gap: 3vw;
     flex: 1;
+    justify-content: flex-end;
 }
 
 .project-column {
