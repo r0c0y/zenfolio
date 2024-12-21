@@ -476,10 +476,6 @@ nav {
 }
 
 @media (max-width: 480px) {
-    .nav-links {
-
-    }
-
     .hero h1 {
         font-size: 12vw;
     }
@@ -572,11 +568,35 @@ nav {
     }
 }
 
-
-@media (max-width: 320px) {
-    .nav-links{
+@media (max-width: 319px) {
+    .nav-links {
         display: none;
     }
+}
 
+@media (max-width: 290px) {
+    body {
+        text-align: center;
+    }
 
+    .hero h1, 
+    .contact-container h2, 
+    .testimonials h2 {
+        margin: 0 auto;
+    }
+
+    .nav, .projects-container, .gallery, .footer {
+        text-align: center;
+        align-items: center;
+    }
+
+    .project-items, .contact-grid, .gallery img {
+        justify-content: center;
+    }
+
+    .gallery img:nth-child(3) {
+        grid-column: span 1;
+        width: 100%;
+        height: auto;
+    }
 }
